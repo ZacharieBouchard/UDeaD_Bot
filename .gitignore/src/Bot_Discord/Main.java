@@ -26,18 +26,18 @@ public class Main {
     public static JDA jda;
     public static HashMap<String, Command> commands = new HashMap<String, Command>();
     public static final CommandParser parser = new CommandParser();
-    
+    private static BotSettings botSettings;
     public static boolean isOn = false;
     public static int count = 0;
 	public static void main(String[] args) {
-		
+		botSettings = new BotSettings();
 		try {
-			jda = new JDABuilder(AccountType.BOT).setToken("NDE0OTIzNjY2Mzg4ODExNzc4.DWuc3Q.Xz0lQN3caqKYT20erPlV9Bi-dsc").buildAsync();
+			jda = new JDABuilder(AccountType.BOT).setToken(botSettings.getToken()).buildBlocking();
 			jda.setAutoReconnect(true);
 			jda.addEventListener(new BotListener());
 			jda.addEventListener(new Botlistener2());
 			System.out.println("Bot UDeaD: ON and connected");
-		} catch (LoginException e) {
+		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		commands.put("help", new HelpCommand());
