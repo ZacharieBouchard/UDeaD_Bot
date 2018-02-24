@@ -4,8 +4,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>ws.nmathe.rider</groupId>
-    <artifactId>rider</artifactId>
+    <groupId>src.Bot_Discord</groupId>
+    <artifactId>Bot_Discord</artifactId>
     <version>1</version>
 
     <properties>
@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>UDeaD_Bot/.gitignore/src/Bot_Discord/Main.java</mainClass>
+                            <mainClass>src.Bot_Discord.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
