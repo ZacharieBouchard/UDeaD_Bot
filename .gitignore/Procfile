@@ -1,1 +1,1 @@
-Worker: java $JAVA_OPTS -cp target/src/Discord_Bot/Main.java
+run: java $JAVA_OPTS -cp target/src/Discord_Bot/Main.java
