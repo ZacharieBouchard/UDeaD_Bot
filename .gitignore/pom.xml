@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>ws.nmathe.rider.Main</mainClass>
+                            <mainClass>Bot_Discord.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
