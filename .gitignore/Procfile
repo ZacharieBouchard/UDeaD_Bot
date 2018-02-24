@@ -1,1 +1,1 @@
-Worker: java -jar target/Bot_Discord-1-jar-with-dependencies.jar
+run: java -jar target/src.Bot_Discord-1-jar-with-dependencies.jar
