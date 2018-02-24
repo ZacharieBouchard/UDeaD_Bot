@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>Bot_Discord.Main</mainClass>
+                            <mainClass>bin.Bot_Discord.Main</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
