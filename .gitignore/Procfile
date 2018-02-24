@@ -1,1 +1,1 @@
-run: java -jar target\src\Bot_Discord\jar-with-Dependencies.jar
+run: java -jar target/Bot_Discord-1-jar-with-dependencies.jar
