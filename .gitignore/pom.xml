@@ -20,7 +20,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>src.Bot_Discord.Main</mainClass>
+                            <mainClass>src/Bot_Discord/Main.java</mainClass>
                         </manifest>
                     </archive>
                     <descriptorRefs>
