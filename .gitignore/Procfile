@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -cp UDeaD_Bot/src/* Serveur.jar
+web: java $JAVA_OPTS -cp UDeaD_Bot/.gitignore/src/* Serveur.jar
