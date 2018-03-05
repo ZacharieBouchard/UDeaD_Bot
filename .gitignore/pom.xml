@@ -18,7 +18,7 @@
                     <execution>
                         <id>make-assembly</id>
                         <phase>package</phase>
-                        <goals>single</goal>
+                        <goals>jar-with-dependencies</goal>
                     </execution>
                 </executions>
             </plugin>
