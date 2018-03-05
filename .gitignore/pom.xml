@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>Bot_Discord</groupId>
-    <artifactId>Bot_Discord</artifactId>
+    <artifactId>src</artifactId>
     <version>1</version>
 
     <properties>
@@ -13,27 +13,33 @@
         <maven.compiler.target>1.8</maven.compiler.target>
     </properties>
 
-   <project>
-            
-  <build>
+    <build>
+        <plugins>
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <mainClass>src.Serveur.jar/mainClass>
+                        </manifest>
+                    </archive>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
 
-    <plugins>
-      <plugin>
-        <groupId>com.heroku.sdk</groupId>
-        <artifactId>heroku-maven-plugin</artifactId>
-        <version>2.0.3</version>
-      </plugin>
-    </plugins>
-  </build>
- <project>
- 
-          <configuration>
-
-  <processTypes>
-     <web>java $JAVA_OPTS -cp target/classes:target/dependency/* Serveur.jar</web>
-  </processTypes>
-</configuration>
-          
     <repositories>
         <repository>
             <id>jcenter</id>
